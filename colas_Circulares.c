@@ -1,5 +1,6 @@
 #include "colas_Circulares.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 
 
