@@ -32,16 +32,16 @@ void push_queeu(Queeu *queeu, char character) {
 }
 
 
-//char pop_queeu(Queeu *queeu) {
-//    if (!is_empty(queeu)) {
-//       queeu-> head = (queeu->head + 1) % MAX_SIZE;
-//       queeu->elements--;
-//       return queeu->array[queeu->head];
-//    } else {
-//        puts("underflow");
-//        exit(1);
-//    }
-//}
+char pop_queeu(Queeu *queeu) {
+    if (!is_empty(queeu)) {
+       queeu-> head = (queeu->head + 1) % MAX_SIZE;
+       queeu->elements--;
+       return queeu->array[queeu->head];
+    } else {
+        puts("underflow");
+        exit(1);
+    }
+}
 
 
 
